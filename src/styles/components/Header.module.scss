@@ -1,0 +1,55 @@
+@import '../constant.scss';
+
+.Head {
+  display: flex;
+  height: 70px;
+  background-color: $light-bg-color;
+  box-shadow: 0px 0px 20px rgba(56, 71, 109, 0.03);
+  border-bottom: 1px solid $medium-light-color;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-right: 1px solid $medium-light-color;
+    cursor: pointer;
+
+    & > img {
+      width: 40px;
+    }
+  }
+
+  .mainHead {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 30px;
+
+    & > p {
+      color: $dark-color;
+      font-size: 1.15rem;
+    }
+  }
+
+  .HeadCog {
+    padding: 10px;
+    background-color: $light-color;
+    margin-left: auto;
+    border-radius: 8px;
+    border: 1px solid $medium-light-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $medium-light-color;
+    }
+
+    & > svg {
+      color: $logo-color;
+    }
+  }
+}
