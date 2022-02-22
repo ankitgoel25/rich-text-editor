@@ -1,0 +1,31 @@
+@import '../constant.scss';
+
+.Toolbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid $medium-light-color;
+  background-color: $light-bg-color;
+  border-radius: 5px;
+  padding: 6px 10px;
+
+  button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+
+    & > svg {
+      height: 14px;
+      color: #344563b2;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $medium-light-color;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../constant.scss';
+
+.OuterBox {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+
+  .innerBox {
+    width: 60%;
+    background-color: #f4f5f7;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1rem;
+    padding: 20px 25px;
+
+    & > p {
+      color: $dark-color;
+      font-weight: 500;
+      font-size: 1.1em;
+      margin: 0 0 1.2rem;
+    }
+
+    .commentBox {
+      display: flex;
+      margin-bottom: 1.5rem;
+
+      .imageSection {
+        & > span {
+          position: relative;
+          display: block;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+
+      .commentMain {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        margin-left: 15px;
+        margin-top: 7px;
+
+        .commentHeader {
+          display: flex;
+          flex-direction: row;
+
+          & > span:nth-child(1) {
+            color: $dark-color;
+            font-weight: 500;
+            margin-right: 10px;
+          }
+          & > span:nth-child(2) {
+            color: $dark-color;
+            opacity: 0.6;
+          }
+        }
+        .comment > p {
+          margin: 0.85em 0 0;
+        }
+      }
+    }
+  }
+}
