@@ -29,9 +29,20 @@ export default function Editor() {
         },
       ],
     },
+    {
+      children: [
+        { text: 'Five things works in this editor currently: ' },
+        { text: 'Bold', bold: true },
+        { text: ', ' },
+        { text: 'Italic', italic: true },
+        { text: ', ' },
+        { text: 'Underline', underline: true },
+        { text: ', Code Block and Quote.' },
+      ],
+    },
     { children: [{ text: 'Looking Forward!' }] },
     { children: [{ text: 'Regards', italic: true }] },
-    { children: [{ italic: true, text: 'Ankit Goel' }] },
+    { children: [{ text: 'Ankit Goel' }] },
   ]);
 
   return (
